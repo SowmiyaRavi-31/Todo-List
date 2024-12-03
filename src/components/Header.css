@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    background: #1d3557;
+    color: #f1faee;
+    border-bottom: 2px solid #457b9d;
+    animation: slideDown 1s ease;
+    text-align: center; /* Center-align text */
+  }
+  
+  .header-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .header-subtitle {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #a8dadc;
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

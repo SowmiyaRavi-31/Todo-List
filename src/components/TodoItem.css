@@ -1,0 +1,74 @@
+.todo-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.8s forwards ease;
+  }
+  
+  .todo-item:hover {
+    transform: scale(1.03) rotate(1deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .todo-item.completed .todo-text {
+    text-decoration: line-through;
+    color: #a8dadc;
+  }
+  
+  .todo-text {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .todo-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .completed-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .completed-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  .remove-btn {
+    background-color: #dc3545; /* Red */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
